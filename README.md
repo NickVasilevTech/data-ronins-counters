@@ -12,14 +12,17 @@ SETUP:
 Prerequisites: Docker, Docker Compose, Git  
  
 Steps to install:  
-1. Clone the repo
+1. Clone the repo.
 2. In the repo's folder run `docker compose up -d`
-3. Try to access the solution at http://localhost:8000
-4. To test the solution, please use the standard URL for the default WP login page - http://localhost:8000/wp-login.php
+3. Go through the standard steps of setting up a new WordPress instance.
+4. In the Admin Panel, under Settings, General, check the 'Anyone can register' option for Memebership. Save.
+5. Go to the Plugins menu. In the listing activate the 'Data Ronins Login&Register Counters' plugin.
+6. Logout.
+7. To test the solution, please use the standard URL for the default WP login page.
 
 Info on the design:  
 I've tried to use comments in the code to show understanding of what's different WP built-in functionalities do.  
 I've selected CamelCase as the naming convention for the custom variables and functions. This was done with the idea of making it easier to find and identify custom business logic and data.  
-
+The plugin works on the default 'Log In' button and the 'Register' link on the default WordPress login page. I've modified the behaviour of the 'Register' link instead of the 'Register' button so that there's no back-and-forth when testing.
 
 
