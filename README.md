@@ -8,17 +8,18 @@ Create a WordPress plugin that:
   - Login attempts: 5 (for example)
   - Register attempts 3 (for example)
 
-Setup:
-Prerequisites: Docker, Docker Compose, Git
-Steps to install:
+SETUP:  
+Prerequisites: Docker, Docker Compose, Git  
+ 
+Steps to install:  
 1. Clone the repo
 2. In the repo's folder run `docker compose up -d`
 3. Try to access the solution at http://localhost:8000
 4. To test the solution, please use the standard URL for the default WP login page - http://localhost:8000/wp-login.php
 
-Info on the design:
-I've tried to use comments in the code to show understanding of what's different WP built-in functionalities do. 
-I've selected CamelCase as the naming convention for the custom variables and functions. This was done with the idea of making it easier to find and identify custom business logic and data.
+Info on the design:  
+I've tried to use comments in the code to show understanding of what's different WP built-in functionalities do.  
+I've selected CamelCase as the naming convention for the custom variables and functions. This was done with the idea of making it easier to find and identify custom business logic and data.  
 Work time was around 8 hours, spread over two days.
 
 
